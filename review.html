@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./review.css">
+
+</head>
+<body>
+  <header>
+    <div class="company-logo">T
+    </div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="Home1.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="Community3.html"class="nav-link">BLOG</a></li>
+        <li class="nav-item"><a href="About2.html"class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a href="Home.html"class="nav-link">LOG OUT</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+      
+    </div>
+    
+  </header>
+
+  <h2 style="color: white; margin-top: 30px;margin-left: 560px;">Your Review Important to us.....</h2>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <label>Insert your Name:</label>
+  <input name="name" type="text" placeholder="your name" v-model="name"><br>
+  <label>Insert your City:</label>
+  <input name="city" type="text" placeholder="City" v-model="city"><br>
+  <label>Insert your Review:</label>
+  <textarea name="content" placeholder="your review" v-model="content"></textarea>
+  <button v-on:click="addReview()">Send</button>
+  
+  <div v-for="item in list" class="review">
+    
+  <div class="review-photo">
+    <img v-bind:src="item.photo">
+  </div>
+  
+  <div class="review-box">
+    
+    <div class="review-author">
+      <p><strong>{{item.name}}</strong> - <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      - {{item.city}}</p>
+    </div>
+    <br>
+    <div class="review-comment">
+      <p>{{item.content}}</p>
+    </div>
+    <br>
+    <div class="review-date">
+      <time>July, 27th, 2016</time>
+    </div>
+    
+  </div>
+    
+  </div>
+  
+</div>
+<div class="footer" style="margin-top: 55px;">
+  <div class="contain">
+  <div class="col">
+    <h1>Web</h1>
+    <ul>
+      <li><a href="About2.html" style="text-decoration: none; color: rgba(240, 236, 236, 0.468);">About</a></li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li><a href="Community3.html" style="text-decoration: none; color: rgba(240, 236, 236, 0.468);">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Products</h1>
+    <ul>
+      <li>Laptop</li>
+      <li>Headphone</li>
+      <li>Speaker</li>
+      <li>Desktop</li>
+      <li>More..</li>
+    </ul>
+  </div>
+  
+  <div class="col">
+    <h1>Company</h1>
+    <ul>
+      <li>Dell</li>
+      <li>Asus</li>
+      <li>Apple</li>
+      <li>IBM</li>
+      <li>More..</li>
+      
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="facebook.png" style="width: 35px;"></li>
+      <li><img src="twiter.png"  style="width: 43px;"></li>
+      <li><img src="instagram.png" style="width: 36px;"></li>
+    </ul>
+  </div>
+<div class="clearfix">
+</div>
+</div>
+<h2 style="color: rgba(255, 255, 255, 0.537); font-size: 0.8rem; text-align: center;padding: 2rem 2rem;">© Copyright 2023 Powered by TECH FUSION HUB</h2>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/vue/1.0.16/vue.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.13/vue-resource.min.js'></script><script  src="./reveiew.js"></script>
+
+</body>
+</html>

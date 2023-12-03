@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="update.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="company-logo">TFH
+        </div>
+        <nav class="navbar">
+          <ul class="nav-items">
+            <li class="nav-item"><a href="Home1.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="Community3.html"class="nav-link">BLOG</a></li>
+            <li class="nav-item"><a href="About2.html"class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="Home.html"class="nav-link">LOG OUT</a></li>
+            
+    
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="bx bx-menu"></i>
+          <i class="bx bx-x"></i>
+        </div>
+      </header>
+    <div class="form-container">
+        <h2>Update Your Information</h2>
+        <br>
+        <form id="updateForm">
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" id="fname" name="name" placeholder="Updated fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+                <input type="text" id="lname" name="name" placeholder="updated lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="updated email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="updated password" required>
+            </div>
+
+            
+
+            <div class="form-group">
+                <a href="Home1.html">
+                    <input type="button" value="Update" onclick="updateInfo()">
+                </a>
+                
+            </div>
+        </form>
+    </div>
+    <div class="footer" style="margin-top: 2rem;">
+        <div class="contain">
+        <div class="col">
+          <h1>Web</h1>
+          <ul>
+            <li><a href="About2.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.626)">About</a></li>
+            <li>Mission</li>
+            <li>Services</li>
+            <li>Social</li>
+            <li><a href="Community3.html" style="text-decoration: none; color: rgba(255, 255, 255, 0.626)">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Products</h1>
+          <ul>
+            <li>Laptop</li>
+            <li>Headphone</li>
+            <li>Speaker</li>
+            <li>Desktop</li>
+            <li>More..</li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <h1>Company</h1>
+          <ul>
+            <li>Dell</li>
+            <li>Asus</li>
+            <li>Apple</li>
+            <li>IBM</li>
+            <li>More..</li>
+            
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Support</h1>
+          <ul>
+            <li>Contact us</li>
+            <li>Web chat</li>
+            <li>Open ticket</li>
+          </ul>
+        </div>
+        <div class="col social">
+          <h1>Social</h1>
+          <ul>
+            <li><img src="facebook.png" style="width: 35px;"></li>
+            <li><img src="twiter.png"  style="width: 43px;"></li>
+            <li><img src="instagram.png" style="width: 36px;"></li>
+          </ul>
+        </div>
+      <div class="clearfix">
+      </div>
+      </div>
+      <h2 style="color: rgba(255, 255, 255, 0.537); font-size: 0.8rem; text-align: center;padding: 2rem 2rem;">© Copyright 2023 Powered by TECH FUSION HUB</h2>
+      </div>
+      <script>
+        function updateInfo() {
+            // Get the values entered by the user
+            var newFirstName = document.getElementById("fname").value;
+            var newLastName = document.getElementById("lname").value;
+            var newEmail = document.getElementById("email").value;
+            var newPassword = document.getElementById("password").value;
+            
+  
+  
+            // You can perform actions with the updated data here, such as sending it to a server.
+            // For this example, we'll just display the updated values in an alert.
+            alert("First Name: " + newFirstName +"\nLast Name: "+ newLastName + "\nEmail: " + newEmail +"\nPassword: " + newPassword );
+        }
+    </script>
+</body>
+</html>
